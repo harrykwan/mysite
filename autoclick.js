@@ -76,7 +76,7 @@
 		
 	}
 
-
+	var timerdisplay;
 	function startclicker(){
 		var usertimeinput = mynewwindow.document.getElementById("usertimeinput").value;
 		var currentdate = new Date();
@@ -95,12 +95,13 @@
 		}
 		setTimeout(function(){
 			elementget.click();
+			clearInterval(timerdisplay);
 			mynewwindow.close();
 			elementget = undefined;
 		}, timegap);
 		mynewwindow.document.write("Click at "+usertimeinput+"<br><hr>Countdown<br><div id='countdownidisplay' style='font-size:30px;'></div>");
 		var distance = timegap;
-		var timerdisplay = setInterval(function() {
+		timerdisplay = setInterval(function() {
 		    distance-=100;
 		    //var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 		    //var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
