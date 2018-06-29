@@ -87,7 +87,11 @@
 			timegap+=0-currentdate.getMilliseconds();
 		}
 		if (timegap<0){
-			timegap+=24*60*60*1000;
+			if (confirm("It will be tommerow, are you sure?")){
+				timegap+=24*60*60*1000;
+			} else {
+				return;
+			}
 		}
 		setTimeout(function(){
 			elementget.click();
