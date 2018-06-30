@@ -1,0 +1,23 @@
+<html>
+<head>
+	<style type="text/css">
+		div{
+			display: inline;
+		}
+	</style>
+</head>
+<body>
+
+<iframe src="http://www.hko.gov.hk/cgi-bin/gts/time5a.pr">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+<br><input id='myinput' type="text" name=""><div id="mytimearea"></div><button onclick="mycalc()">=</button><div id="myoutput"></div>
+<script type="text/javascript">
+	var now = new Date().getTime();
+	document.getElementById("mytimearea").innerHTML = -(now);
+	function mycalc(){
+		document.getElementById("myoutput").innerHTML=Number(document.getElementById("mytimearea").innerHTML)+Number(document.getElementById("myinput").value);
+	}
+</script>
+</body>
+</html>
