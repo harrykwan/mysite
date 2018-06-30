@@ -12,6 +12,8 @@
   <p>Your browser does not support iframes.</p>
 </iframe>
 <br><input id='myinput' type="text" name=""><div id="mytimearea"></div><button onclick="mycalc()">=</button><div id="myoutput"></div>
+<br>
+copy the number after "0=", paste at the input box and click "=" button, it will calcuate the gap of your local time and hko time in ms. (e.g. ouput put is 30, means that your local time + 30ms = hko time)
 <script type="text/javascript">
 	var now = new Date().getTime();
 	document.getElementById("mytimearea").innerHTML = -(now);
