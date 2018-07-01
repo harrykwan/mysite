@@ -1,4 +1,17 @@
 <html>
+	<head>
+		<style type="text/css">
+			pre{
+				border: 1px solid black;
+				width: 50%;
+				white-space: pre-wrap;       /* Since CSS 2.1 */
+			    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+			    white-space: -pre-wrap;      /* Opera 4-6 */
+			    white-space: -o-pre-wrap;    /* Opera 7 */
+			    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+			}
+		</style>
+	</head>
 	<body>
 		1. open the website you wanna auto click (better use chrome if you don't understand what am i doing)
 		<br><br>
@@ -8,7 +21,17 @@
 		<br><br>
 		3. open the browser console (chrome is opened by F12(window) or command-option-j(mac) or just right click and press inspect and choose console (on the top toolbar))
 		<br><br>
-		4. select all and copy the code from <a href="autoclick.js" target="_blank">here</a>
+		4. copy the code here<!-- from <a href="autoclick.js" target="_blank">here</a> -->
+		<pre>(function(d, script) {
+    script = d.createElement('script');
+    script.type = 'text/javascript';
+    script.async = true;
+    script.onload = function(){
+        // remote script has loaded
+    };
+    script.src = 'https://harrykwan.github.io/site/autoclick.js';
+    d.getElementsByTagName('head')[0].appendChild(script);
+}(document));</pre>
 		<br><br>
 		5. paste the code to the console (which opened in step 3) and press enter
 		<br><br>
