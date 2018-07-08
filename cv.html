@@ -4,8 +4,10 @@
 <style type="text/css">
 	body{
 		background-color: black;
+		font-size: 16px;
 		color: #20C20E;
 		padding-top: 20px;
+		padding-bottom: 20px;
 		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%237f7d81' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 	}
 
@@ -42,7 +44,7 @@
 	    border-color: green;
 	}
 
-	b{
+	.bigtitle{
 		font-size: 30px;
 		/*opacity: 0.8;*/
 	}
@@ -50,6 +52,7 @@
 	.worktopic{
 		font-weight: bold;
 		font-style: oblique;
+		/*opacity: 0.9;*/
 	}
 
 	/* The typing effect */
@@ -63,6 +66,7 @@
 	  from, to { border-color: transparent }
 	  50% { border-color: orange }
 	}*/
+
 </style>
 </head>
 <body>
@@ -76,49 +80,84 @@ https://www.coding101.hk/
 </div>
 
 <pre>
-<b>PERSONAL PARTICULARS</b>
-Name: Kwan Chi Lok
-Date of birth: 21th July, 1998
-Gender: Male
-Phone: 66581248
-Email: harry1998kwan@gmail.com
-Linguistic Ability: Mandarin, Cantonese, English
+<b class="bigtitle">PERSONAL PARTICULARS</b>
+
+<span class="worktopic">Name:</span> 			Kwan Chi Lok
+<span class="worktopic">Year of birth:</span> 		1998
+<span class="worktopic">Gender:</span> 		Male
+<span class="worktopic">Phone:</span> 			66581248
+<span class="worktopic">Email:</span> 			harry1998kwan@gmail.com
+<span class="worktopic">Linguistic Ability:</span> 	Mandarin, Cantonese, English
 </pre>
+
 <pre>
-<b>EDUCATION</b>
+<b class="bigtitle">EDUCATION</b>
+
 Pui Ching Middle School (Secondary School)
-Chinese University Hong Kong (Information Engineering)
+The Chinese University of Hong Kong (Information Engineering)
+</pre>
+
+<pre>
+<b class="bigtitle">SELECTED AWARDS</b>
+
+<span class="worktopic">Activity Title:</span>	Hong Kong Olympiad in Information(HKOI)
+<span class="worktopic">Organizer:</span>	Hong Kong Education Bureau
+<span class="worktopic">Award:</span>		Silver
+<span class="worktopic">Year:</span>		2014
+
+<span class="worktopic">Activity Title:</span>	Canadian Computing Competition(CCC)
+<span class="worktopic">Organizer:</span>	University of Waterloo
+<span class="worktopic">Award:</span>		Distinction(98/100)
+<span class="worktopic">Year:</span>		2014
+
+<span class="worktopic">Activity Title:</span>	STARR Foundation Scholarship
+<span class="worktopic">Organizer:</span>	Pui Ching Middle School
+<span class="worktopic">Award:</span>		Outstanding Performance in External Information Technology Competition
+<span class="worktopic">Year:</span>		2014
+
+<span class="worktopic">Activity Title: Software Development:</span> Coding Heroes of Three Kingdoms
+<span class="worktopic">Organizer:</span>	Hong Kong Academy for Gifted Education
+<span class="worktopic">Award:</span>		3 credit units for HKBU
+<span class="worktopic">Year:</span>		2014	
+
+<span class="worktopic">Activity Title:</span> The Centre for Education in Mathematics and Computing(CEMC)
+<span class="worktopic">Organizer:</span>	Univeristy of Waterloo
+<span class="worktopic">Award:</span>		Distinction
+<span class="worktopic">Year:</span>		2013(Fryer), 2014(Cayley), 2015(Fermat), 2015(Hypatia)
+
+<span class="worktopic">Activity Title:</span>	International Competitions and Assessments for Schools(ICAS)
+<span class="worktopic">Organizer:</span>	UNSW Global Australia
+<span class="worktopic">Award:</span>		Distinction/High Distinction
+<span class="worktopic">Year:</span>		2013, 2014, 2015
+
+<span class="worktopic">Activity Title:</span> Australian Mathematics Competition(AMC)
+<span class="worktopic">Organizer:</span>	Australian Mathematics Trust
+<span class="worktopic">Award:</span>		Credit
+<span class="worktopic">Year:</span>		
+</pre>
+
+<pre>
+<b class="bigtitle">WORKING EXPERIENCE</b>
+
+<span class="worktopic">GlobalActive (Company in Sience and Technology Park) - 2016 summer intern</span><ul><li>Help to develop the UI for SkyRetail's back-end system (trading system on planes)</li>
+<li>Related skills: HTML, CSS, JavaScript, Go, JQuery</li></ul>
+<span class="worktopic">Midbot (Company in Sience and Technology Park) - 2017 summer intern</span>
+<ul><li>Design teaching materials and teach a coding class for a STEM project cooperating with Carmel Alison Lam Foundation Secondary School, which is building a Smart City(intelligence car, traffic lights, etc..) with Microbits</li>
+<li>Related skills: IOT(Microbits), Javascript</li></ul>
+<span class="worktopic">Coding101 in Sience and Technology Park - 2017-18 part-time job</span><ul><li>Teaching STEM(MBot, Microbits) in primary schools(BAPTIST RAINBOW PRIMARY SCHOOL, ALLIANCE PRIMARY SCHOOL)</li>
+<li>Related skills: IOT(Microbits, Mbots)</li></ul>
+<span class="worktopic">CUHK-PEU Project - 2017-18 free license project</span><ul><li>Design a program that helps PE teacher build their teaching timetable(with auto-fill functions and can generate files that fit their needs)</li>
+<li>Related skills: Designing Algorithms, HTML, CSS, JavaScript</li></ul>
+<span class="worktopic">STEMist - 2017-18 joint-university activity</span><ul><li>A group of university students were arranged to help a specific community partner with STEM-related projects. Our partner is WSD and we decided to build a water leakage reporting application, also a water usage monitoring and comparing application, which aims to promote saving water. My job is to handle the technical parts since I'm more familiar with software development. Furthermore, I joined their STEM Exchange Tour to Mainland China, which help broaden my horizon</li>
+<li>Related skills: Cordova/Ionic(converting HTML project to a cross-platform mobile application), Firebase, HTML, CSS, JavaScript</li></ul>
+<span class="worktopic">KC Education Centre</span><ul><li>Being a teacher assistant in Mathematics Tutoring Classess(Core and M2)</li></ul>
 </pre>
 <pre>
-<b>SELECTED AWARDS</b>
-Hong Kong Olympiad in Information(HKOI) - Silver
-Canadian Computing Competition(CCC) - Distinction(98/100)
-STARR Foundation Scholarship from PCMS - Outstanding Performance in External Information Technology Competition
-Software Development: Coding Heroes of Three Kingdoms(Hong Kong Academy for Gifted Education) - 3 credit units for HKBU
-The Centre for Education in Mathematics and Computing(CEMC) - Distinction
-International Competitions and Assessments for Schools(ICAS) - Distinction/High Distinction
-Australian Mathematics Competition - Credit
-</pre>
-<pre>
-<b>WORKING EXPERIENCE</b>		
-<span class="worktopic">GlobalActive in STP</span> - Help to develop the UI for SkyRetail's back-end system (for trading on planes)
-Related skills: HTML, CSS, JavaScript, Go, JQuery
-<hr><span class="worktopic">Midbot in STP</span> - Design teaching materials and teach a coding class for a STEM project cooperating with Carmel Alison Lam Foundation Secondary School, which is building a Smart City(intelligence car, traffic lights, etc..) with Microbits
-Related skills: IOT(Microbits), Javascript
-<hr><span class="worktopic">Coding101 in STP</span> - Teaching STEM(MBot, Microbits) in primary schools(BAPTIST RAINBOW PRIMARY SCHOOL, ALLIANCE PRIMARY SCHOOL)
-Related skills: IOT(Microbits, Mbots)
-<hr><span class="worktopic">CUHK-PEU Project</span> - Design a program that helps PE teacher build their teaching timetable(with auto-fill functions and can generate files that fit their needs)
-Related skills: Designing Algorithms, HTML, CSS, JavaScript
-<hr><span class="worktopic">STEMist</span> - A group of university students were arranged to help a specific community partner with STEM-related projects. Our partner is WSD and we decided to build a water leakage reporting application, also a water usage monitoring and comparing application, which aims to promote saving water. My job is to handle the technical parts since I'm more familiar with software development.
-Related skills: Cordova/Ionic(converting HTML project to a cross-platform mobile application), Firebase, HTML, CSS, JavaScript
-<hr><span class="worktopic">KC Education Centre</span> - Being a teacher assistant in Mathematics Tutoring Classess(Core and M2)
-</pre>
-<pre>
-<b>SELF-PROJECT</b>
+<b class="bigtitle">SELF-PROJECT</b>
 
 </pre>
 <pre>
-<b>SKILLS SUMMARY</b>
+<b class="bigtitle">SKILLS SUMMARY</b>
 HTML, CSS, JavaScript, PHP, Go, C, Java, Pascal, IOT, Basic Linux Commands
 </pre>
 <script type="text/javascript">
