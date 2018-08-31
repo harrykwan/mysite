@@ -6,16 +6,17 @@ feild3.value = 351;
 document.getElementsByTagName("form")[0].submit();
 
 //---------------------------------------------------------------nextpage
-var checking = setInterval(function(){
+var checking2 = setInterval(function(){
 	var cotaleft = parseInt(document.getElementsByTagName("td")[12].innerText)-parseInt(document.getElementsByTagName("td")[13].innerText);
 	if (cotaleft>0){
 		alert('wow, someone drop');
+		clearInterval(checking2);
 	}
 },60000);
 //-----new
 
 
-var mynewwindow = window.open("http://www.adm.uwaterloo.ca/infocour/CIR/SA/under.html");
+var mynewwindow = window.open("http://www.adm.uwaterloo.ca/infocour/CIR/SA/under.html", "MsgWindow", "width=200,height=100");
 
 
 var checking1 = setInterval(function(){
@@ -32,5 +33,14 @@ var checking1 = setInterval(function(){
 		feild3.value = 351;
 
 		mynewwindow.document.getElementsByTagName("form")[0].submit();
+		var checking2 = setInterval(function(){
+			var cotaleft = parseInt(mynewwindow.document.getElementsByTagName("td")[12].innerText)-parseInt(mynewwindow.document.getElementsByTagName("td")[13].innerText);
+			console.log(cotaleft);
+			if (cotaleft>0){
+				alert('wow, someone drop');
+				clearInterval(checking2);
+			}
+			mynewwindow.location.reload();
+		},60000);
 	}
 },500);
