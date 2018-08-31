@@ -12,3 +12,25 @@ var checking = setInterval(function(){
 		alert('wow, someone drop');
 	}
 },60000);
+//-----new
+
+
+var mynewwindow = window.open("http://www.adm.uwaterloo.ca/infocour/CIR/SA/under.html");
+
+
+var checking1 = setInterval(function(){
+	if (mynewwindow.document){
+		clearInterval(checking1);
+		var feild1 = mynewwindow.document.getElementsByName("sess")[0];
+
+		var feild2 = mynewwindow.document.getElementsByName("subject")[0];
+
+		feild2.value = "PMATH";
+
+		var feild3 = mynewwindow.document.getElementsByName("cournum")[0];
+
+		feild3.value = 351;
+
+		mynewwindow.document.getElementsByTagName("form")[0].submit();
+	}
+},500);
