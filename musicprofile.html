@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous"> -->
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Kalam|Shadows+Into+Light&display=swap" rel="stylesheet">
+<!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+<script src="https://kit.fontawesome.com/b279e9134c.js"></script>
+
+
+	<style type="text/css">
+	:root{
+		/*--main-color: #ffeb3b;*/
+		--main-color: #455a64;
+		--sec-color: #01579b;
+		--main-bk-color: #1c313a;
+    --main-word-color: #CCC;
+	}
+
+	img{
+		/*height: 50%;
+		width: 50%;*/
+    opacity: 1;
+	}
+	body{
+		background: var(--main-bk-color);
+	}
+
+  .mainbg{
+    background: var(--main-bk-color);
+  }
+
+	.mybg1{
+		background: var(--main-color);
+	}
+
+	.mybg2{
+		background: var(--sec-color);
+	}
+
+	.mysection{
+		padding: 30px;
+		margin: 5% 10%;
+		/*font-family: 'Indie Flower', cursive;*/
+		/*font-family: 'Acme', sans-serif;*/
+		font-family: 'Play', sans-serif;
+    box-shadow: 2px 2px 5px #222;
+
+
+	}
+
+  .mainword{
+    color: var(--main-word-color);
+  }
+
+  footer{
+    margin: 50px;
+    /*width: 100%;*/
+
+    /*padding: 10% auto;*/
+    margin: 10% 0;
+  }
+
+  #photoshowbox{
+    margin: 0% 0%;
+
+  }
+
+  #mynavbar{
+    position: fixed;
+    z-index: 5;
+    width:100%;
+    /*border-bottom: 1px solid black;*/
+    background: var(--main-bk-color);
+    box-shadow: 1px 1px 6px #222;
+  }
+
+
+
+  #myname{
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Kalam', cursive;
+  }
+
+
+
+	</style>
+</head>
+<body>
+
+<div id="mynavbar" class="pos-f-t">
+  <nav class="navbar navbar-dark mainbg">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="mymainbg p-4">
+      <h5 class="text-white h4">Music Profile</h5>
+      <a class="text-muted" href="#about_section">About Me</a><br>
+      <a class="text-muted" href="#experience_section">Perform Experience</a><br>
+      <a class="text-muted" href="#video_section">Video Links</a><br>
+      <a class="text-muted" href="#contact_section">Contact me</a><br>
+    </div>
+  </div>
+</div>
+
+<div>
+</div>
+
+<!-- <div style="position: relative; top: 80px; left: 5%; z-index: 4; color: white; opacity: .5;"><h1 id="myname">HARRY KWAN</h1></div> -->
+
+
+<div id="photoshowbox"  class="carousel slide" data-ride="carousel">
+ <!--  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol> -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/1.jpg" alt="First slide">
+    </div>
+    
+  </div>
+  <a class="carousel-control-prev" href="#photoshowbox" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#photoshowbox" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+<section id="about_section" class="page-section mybg1 text-white mb-0 mysection" >
+    <div class="container">
+
+      <!-- About Section Heading -->
+      <h1 class="cover-heading">About Harry Kwan</h1>
+        <p class="lead mainword">Music enthusiast, like sharing emotions through music. I see music as an international language, which relieves anxiety, serves as a deserved release from the stresses from everyday life. </p>
+        <p class="lead mainword">In recent years, I started joining more singing competitions and go busking with friends in order to gain more performing oppertunity. I also write songs and record cover for leisure activities, with my guitar, paino and cajon.</p>
+        <!-- <p class="lead">
+          <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+        </p> -->
+
+      
+    </div>
+  </section>
+
+
+<section id="experience_section" class="page-section mybg2 text-white mb-0 mysection" >
+    <div class="container">
+
+      <!-- About Section Heading -->
+
+      <h1 class="cover-heading">Perform Experience</h1>
+      <p class="lead mainword"></p>
+        <p class="lead mainword">> &nbsp; ICMA (INTER-COLLEGE MUSIC ASSOCIATION) SINGING CONTEST (Solo + Group)</p>
+        <p class="lead mainword">> &nbsp; CUHK NA COLLEGE SINGING CONTEST (Solo) - 1st</p>
+        <p class="lead mainword">> &nbsp; CITYU MUSO SINGING CONTEST (Group) - 1st</p>
+        <p class="lead mainword">> &nbsp; CUHK WYS COLLEGE SINGING CONTEST (Solo) - 2st</p>
+        <p class="lead mainword">> &nbsp; CUHK WYS COLLEGE SINGING CONTEST (Solo) - 2st</p>
+        <p class="lead mainword">> &nbsp; Performing in CUHK different activies (Shawband)</p>
+        <p class="lead mainword">> &nbsp; Performing in Tsuen Wan Town Hall</p>
+        <p class="lead mainword">> &nbsp; Busking in Tsim Sha Tsui & Whampoa</p>
+        <!-- <p class="lead">
+          <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+        </p> -->
+
+      
+    </div>
+  </section>
+
+
+<section id="video_section" class="page-section mybg1 text-white mb-0 mysection" >
+    <div class="container">
+
+      <!-- About Section Heading -->
+      <h1 class="cover-heading">Video Links</h1>
+      <br>
+       
+
+        <p class="lead">
+          <a href="https://mycuhk-my.sharepoint.com/:v:/g/personal/1155094301_link_cuhk_edu_hk/ETj1QZcvXD5DjD3hQcd8W5MBuEuZPm359p6TE7BY3hyU2Q?e=fPzcJy" target="_blank" class="btn btn-lg btn-secondary">ICMA Semi-Final (Stanley Plaza)</a>
+        </p>
+
+        <p class="lead">
+          <a href="https://www.youtube.com/watch?v=OBCYdkeeDYM" target="_blank" class="btn btn-lg btn-secondary">ICMA Fianl (Macpherson Stadium)</a>
+        </p>
+
+        <p class="lead">
+          <a href="https://mycuhk-my.sharepoint.com/:v:/g/personal/1155094301_link_cuhk_edu_hk/EXyKPcKebX9IqkjGWYJkJ2YBiTV7LNnmqraBPSru9yAczg?e=NKEGOh" target="_blank" class="btn btn-lg btn-secondary">NA SINGCON (CUHK Sir Run Run Hall)</a>
+        </p>
+
+        <p class="lead">
+          <a href="https://mycuhk-my.sharepoint.com/:v:/g/personal/1155094301_link_cuhk_edu_hk/EcPCHa91rotClTmKo2-np64B7MULX0s23afQGnGsyiu8Zg?e=LWeH2B" target="_blank" class="btn btn-lg btn-secondary">CITYU SINGCON (CityU HALL)</a>
+        </p>
+
+         <p class="lead">
+          <a href="https://www.youtube.com/watch?v=TUMgBxNQJPU" target="_blank" class="btn btn-lg btn-secondary">BUSKING (Whampoa)</a>
+        </p>
+
+      
+    </div>
+  </section>
+
+
+<!-- <div style="margin: 10% auto; height: 5px; width: 80%; " class="mybg2"></div> -->
+
+<div class="mybg2" style="width: 100%; padding-bottom: 1px; padding-top: 1px; margin-top: 50px;">
+
+<footer class="footer text-center">
+    <div class="container" id="contact_section">
+      <div class="row">
+
+        <!-- Footer Social Icons -->
+        <div class="" style="width: 100%;">
+          <h4 class="text-uppercase mb-4" style="color: #DDD;">Contact Me</h4>
+          <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://www.facebook.com/harry.chan.77128">
+            <i class="fab fa-fw fa-facebook-f"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="mailto: harry1998kwan@gmail.com">
+            <i class="fa fa-envelope"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://www.instagram.com/kclmusic0_0/">
+            <i class="fab fa-fw fa-instagram"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://www.youtube.com/channel/UCesflgWO_9u1iQj9sovZnMw">
+            <i class="fab fa-fw fa-youtube"></i>
+          </a>
+        </div>
+
+        
+
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script type="text/javascript">
+	function startpage(){
+		for (var j=2; j<=7; j++)
+		document.getElementById("photoshowbox").getElementsByClassName("carousel-inner")[0].innerHTML += '<div class="carousel-item">      <img class="d-block w-100" src="img/'+j+'.jpg" alt="Second slide">    </div>'
+	}
+	startpage();
+</script>
+
+
+
+<!-- bootstrap js -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+</body>
+</html>
