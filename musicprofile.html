@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Kalam|Shadows+Into+Light&display=swap" rel="stylesheet">
 <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
 <script src="https://kit.fontawesome.com/b279e9134c.js"></script>
@@ -34,8 +35,8 @@
     /*width: 300px;*/
     height: 700px;
     border: 0px solid black;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
+    /*border-bottom-left-radius: 10%;*/
+    /*border-bottom-right-radius: 10%;*/
 	}
 	body{
 		background: var(--main-bk-color);
@@ -46,16 +47,16 @@
   }
 
 	.mybg1{
-		background: var(--main-color);
+		/*background: var(--main-color);*/
 	}
 
 	.mybg2{
-		background: var(--sec-color);
+		/*background: var(--sec-color);*/
 	}
 
   .myimgbg{
     background-image: url(img/guitar.png);
-    background-size: 80%;
+    background-size: 20%;
   }
 
 	.mysection{
@@ -64,7 +65,7 @@
 		/*font-family: 'Indie Flower', cursive;*/
 		/*font-family: 'Acme', sans-serif;*/
 		font-family: 'Play', sans-serif;
-    box-shadow: 2px 2px 5px #222;
+    /*box-shadow: 2px 2px 5px #222;*/
     opacity: 0.9;
     border-radius: 15px;
 
@@ -72,6 +73,8 @@
 
   .mainword{
     color: var(--main-word-color);
+    font-family: 'Roboto', sans-serif;
+
   }
 
   footer{
@@ -106,13 +109,30 @@
   }
 
   .lead>a:hover{
-    background: var(--sec-color);
+    /*background: var(--sec-color);*/
+    background: none;
+    border-left: 5px solid #61808f;
   }
 
   .lead>a{
-    background: #61808f;
+    color: var(--main-word-color);
+    /*background: #61808f;*/
+    border: none;
+    background: none;
     text-align: left;
+    padding: 0px 10px;
   }
+
+  li{
+    padding: 5px 0;
+  }
+
+  ul{
+     list-style-type: none;
+     padding: 0px;
+  }
+
+
 
 	</style>
 </head>
@@ -174,16 +194,27 @@
 
       <!-- About Section Heading -->
       <h1 class="cover-heading">About Me</h1>
-        <p class="lead mainword">Music enthusiast, like sharing emotions through music. I see music as an international language, which relieves anxiety, serves as a deserved release from the stresses from everyday life. </p>
-        <p class="lead mainword">In recent years, I joined singing competitions and go busking in order to gain more performing oppertunity. I also write songs and record cover for leisure activities, with my guitar, paino and cajon.</p>
+        <p class="lead mainword">Music enthusiast, like sharing emotions through music.<br>See music as an international language, which relieves anxiety, serves as a deserved release from the stresses from everyday life. <br>Enjoy performing and have certain perfoming experience as shown below, mostly singing contests, busking and social activities.<br>Also write songs and record covers, usually Mandarin or Cantonese pop songs.</p>
+        <!-- <p class="lead mainword">✓ singing <br>✓ guitar<br> ✓ piano<br> ✓ cajon</p> -->
         <!-- <p class="lead">
           <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
         </p> -->
         <!-- <img src="img/guitar.png" style="width: 100%; position: relative; opacity: .3;"> -->
       
+      <ul>
+        <li class="lead mainword">Singing</li>
+        <li class="lead mainword">Guitar</li>
+        <li class="lead mainword">Piano</li>
+        <li class="lead mainword">Cajon</li>
+      </ul>
+
+
+
     </div>
   </section>
   <!-- <img src="img/guitar.png" style="width: 100%; position: relative; top: 0; left: 0; z-index: -1; opacity: .3;"> -->
+
+
 
 
 <section id="experience_section" class="page-section mybg2 text-white mb-0 mysection" >
@@ -193,17 +224,18 @@
 
       <h1 class="cover-heading">Perform Experience</h1>
       <p class="lead mainword"></p>
-        <p class="lead mainword">> &nbsp; ICMA (INTER-COLLEGE MUSIC ASSOCIATION) SINGING CONTEST (Solo + Group) 2019</p>
-        <p class="lead mainword">> &nbsp; CUHK NA COLLEGE SINGING CONTEST (Solo) 1st 2019</p>
-        <p class="lead mainword">> &nbsp; CITYU MUSO SINGING CONTEST (Group) 1st 2019</p>
-        <p class="lead mainword">> &nbsp; CUHK WYS COLLEGE SINGING CONTEST (Solo + Group) 2st 2019</p>
-        <p class="lead mainword">> &nbsp; Performing in CUHK different activies (Shawband) 2017-18</p>
-        <p class="lead mainword">> &nbsp; Performing in Tsuen Wan Town Hall 2019</p>
-        <p class="lead mainword">> &nbsp; Busking in Tsim Sha Tsui & Whampoa 2016-19</p>
+      <ul>
+        <li class="lead mainword">ICMA (INTER-COLLEGE MUSIC ASSOCIATION) SINGING CONTEST (Solo + Group) 2019</li>
+        <li class="lead mainword">CUHK NA COLLEGE SINGING CONTEST (Solo) 1st 2019</li>
+        <li class="lead mainword">CITYU MUSO SINGING CONTEST (Group) 1st 2019</li>
+        <li class="lead mainword">CUHK WYS COLLEGE SINGING CONTEST (Solo + Group) 2st 2019</li>
+        <li class="lead mainword">Performing in CUHK different activies (Shawband) 2017-18</li>
+        <li class="lead mainword">Performing in Tsuen Wan Town Hall 2019</li>
+        <li class="lead mainword">Busking in Tsim Sha Tsui & Whampoa 2016-19</li>
         <!-- <p class="lead">
           <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
         </p> -->
-
+      </ul>
       
     </div>
 
@@ -211,11 +243,13 @@
   </section>
 
 
+
+
 <section id="video_section" class="page-section mybg1 text-white mb-0 mysection" >
     <div class="container">
 
       <!-- About Section Heading -->
-      <h1 class="cover-heading">Videos</h1>
+      <h1 class="cover-heading">Related Videos</h1>
       <br>
        
 
@@ -250,7 +284,7 @@
 
 <!-- <div style="margin: 10% auto; height: 5px; width: 80%; " class="mybg2"></div> -->
 
-<div class="mybg2" style="border: 0px solid black; border-top-left-radius: 20%; border-top-right-radius: 20%; opacity: 0.95; width: 100%; padding-bottom: 1px; padding-top: 1px; margin-top: 50px;">
+<div class="mybg2" style="border: 2px solid #DDD; border-top-left-radius: 20%; border-top-right-radius: 20%; opacity: 0.95; width: 100%; padding-bottom: 1px; padding-top: 1px; margin-top: 50px; border-left: none; border-right: none; border-bottom: none; ">
 
 <footer class="footer text-center">
     <div class="container" id="contact_section">
