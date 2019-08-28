@@ -24,6 +24,9 @@
 		--sec-color: #0f616e;
 		--main-bk-color: #1c313a;
     --main-word-color: #CCC;
+    /*--highlight-color: #fff081;*/
+     /*--highlight-color: #e2ffb6;*/
+      --highlight-color: #fffcde;
 	}
 
 	img{
@@ -55,8 +58,8 @@
 	}
 
   .myimgbg{
-    background-image: url(img/guitar.png);
-    background-size: 20%;
+    background-image: url(img/texture.jpeg);
+    background-size: 100%;
   }
 
 	.mysection{
@@ -74,7 +77,7 @@
   .mainword{
     color: var(--main-word-color);
     font-family: 'Roboto', sans-serif;
-
+    /*padding-left: 10px;*/
   }
 
   footer{
@@ -112,6 +115,10 @@
     /*background: var(--sec-color);*/
     background: none;
     border-left: 5px solid #61808f;
+    border-color: var(--highlight-color);
+    padding: 0px 10px;
+    color: var(--highlight-color);
+    color: white;
   }
 
   .lead>a{
@@ -120,7 +127,7 @@
     border: none;
     background: none;
     text-align: left;
-    padding: 0px 10px;
+    padding: 0px 0px;
   }
 
   li{
@@ -132,15 +139,19 @@
      padding: 0px;
   }
 
+  .highlightword{
+    color: var(--highlight-color);
+  }
+
 
 
 	</style>
 </head>
 <body>
 
-<div class="myimgbg" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; opacity: .1;"></div>
+<div class="myimgbg" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; opacity: .5;"></div>
 
-<div class="myname" style="color: white; position: fixed; left: calc(50% - 100px); top: 20px;  z-index: 10; opacity: .9;">HARRY KWAN MUSIC PROFILE</div>
+<div class="myname highlightword" style="position: fixed; left: calc(50% - 100px); top: 20px;  z-index: 10; opacity: .9;">HARRY KWAN MUSIC PROFILE</div>
 
 <div id="mynavbar" class="pos-f-t">
   <nav class="navbar navbar-dark mainbg">
@@ -193,7 +204,7 @@
     <div class="container">
 
       <!-- About Section Heading -->
-      <h1 class="cover-heading">About Me</h1>
+      <h1 class="cover-heading highlightword">About Me</h1>
         <p class="lead mainword">Music enthusiast, like sharing emotions through music.<br>See music as an international language, which relieves anxiety, serves as a deserved release from the stresses from everyday life. <br>Enjoy performing and have certain perfoming experience as shown below, mostly singing contests, busking and social activities.<br>Also write songs and record covers, usually Mandarin or Cantonese pop songs.</p>
         <!-- <p class="lead mainword">✓ singing <br>✓ guitar<br> ✓ piano<br> ✓ cajon</p> -->
         <!-- <p class="lead">
@@ -222,7 +233,7 @@
 
       <!-- About Section Heading -->
 
-      <h1 class="cover-heading">Perform Experience</h1>
+      <h1 class="cover-heading highlightword">Perform Experience</h1>
       <p class="lead mainword"></p>
       <ul>
         <li class="lead mainword">ICMA (INTER-COLLEGE MUSIC ASSOCIATION) SINGING CONTEST (Solo + Group) 2019</li>
@@ -249,7 +260,7 @@
     <div class="container">
 
       <!-- About Section Heading -->
-      <h1 class="cover-heading">Related Videos</h1>
+      <h1 class="cover-heading highlightword">Related Videos</h1>
       <br>
        
 
@@ -284,7 +295,7 @@
 
 <!-- <div style="margin: 10% auto; height: 5px; width: 80%; " class="mybg2"></div> -->
 
-<div class="mybg2" style="border: 2px solid #DDD; border-top-left-radius: 20%; border-top-right-radius: 20%; opacity: 0.95; width: 100%; padding-bottom: 1px; padding-top: 1px; margin-top: 50px; border-left: none; border-right: none; border-bottom: none; ">
+<div class="mybg2" style="border: 1px solid #AAA; border-top-left-radius: 20%; border-top-right-radius: 20%; opacity: 1; width: 100%; padding-bottom: 1px; padding-top: 1px; margin-top: 150px; border-left: none; border-right: none; border-bottom: none;  ">
 
 <footer class="footer text-center">
     <div class="container" id="contact_section">
@@ -292,17 +303,17 @@
 
         <!-- Footer Social Icons -->
         <div class="" style="width: 100%;">
-          <h4 class="text-uppercase mb-4" style="color: white;">Contact Me</h4>
-          <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://www.facebook.com/harry.chan.77128">
+          <h4 class="text-uppercase mb-4 myname highlightword" style="font-size: 28px;">Contact Me</h4>
+          <a class="btn btn-outline-light btn-social mx-1" style="border-color: #AAA;" target="_blank" href="https://www.facebook.com/harry.chan.77128">
             <i class="fab fa-fw fa-facebook-f"></i>
           </a>
-          <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="mailto: harry1998kwan@gmail.com">
+          <a class="btn btn-outline-light btn-social mx-1" style="border-color: #AAA;"  target="_blank" href="mailto: harry1998kwan@gmail.com">
             <i class="fa fa-envelope"></i>
           </a>
-          <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://www.instagram.com/kclmusic0_0/">
+          <a class="btn btn-outline-light btn-social mx-1" style="border-color: #AAA;"  target="_blank" href="https://www.instagram.com/kclmusic0_0/">
             <i class="fab fa-fw fa-instagram"></i>
           </a>
-          <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://www.youtube.com/channel/UCesflgWO_9u1iQj9sovZnMw">
+          <a class="btn btn-outline-light btn-social mx-1" style="border-color: #AAA;"  target="_blank" href="https://www.youtube.com/channel/UCesflgWO_9u1iQj9sovZnMw">
             <i class="fab fa-fw fa-youtube"></i>
           </a>
         </div>
